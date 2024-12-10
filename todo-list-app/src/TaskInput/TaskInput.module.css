@@ -1,0 +1,36 @@
+.task_input {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input_text {
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+    width: 40rem;
+    height: 1.75rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+}
+
+.input_text::placeholder {
+    color: #b6b5b5;
+    font-style: italic;
+}
+
+.button_add {
+    background-color: #04AA6D;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-left: 0.25rem;
+    width: 5rem;
+}
+
+.button_add:hover {
+    cursor: pointer;
+    background-color: #00ffa2;
+}
