@@ -1,0 +1,63 @@
+.task_item {
+    background-color: white;
+    width: 50rem;
+    margin-top: 0.4rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #d3d3d3;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.task_text {
+    margin-left: 3rem;
+    padding-top: 0.3rem;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.delete_button {
+    background-color: #ff4c4c;
+    margin-left: 30rem;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.delete_button:hover {
+    cursor: pointer;
+    background-color: #fa0909;
+}
+
+.up_button {
+    background-color: #00a6ff;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.up_button:hover {
+    cursor: pointer;
+    background-color: #42bcfe;
+}
+
+.down_button {
+    background-color: #20acf8;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.down_button:hover {
+    cursor: pointer;
+    background-color: #42bcfe;
+}
+
+.button_container {
+    margin-left: auto;
+    display: flex;
+    gap: 0.3rem;
+    padding-right: 1rem;
+}
