@@ -56,7 +56,7 @@ Remove unwanted tasks by clicking the 🗑️ delete button. Below, a user decid
 
 ![delete_list_item](https://github.com/user-attachments/assets/0d235fc8-a9fe-434d-81c3-036b48403b9c)
 
-![deleted](https://github.com/user-attachments/assets/30f3cd9a-cbaf-440b-9dbd-d6c9facd1cd4)
+![removed](https://github.com/user-attachments/assets/d58d2606-7ff1-498d-ba17-be3bee0322c1)
 
 ---
 
