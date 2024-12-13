@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
+import { useSortable } from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 import styles from './TaskItem.module.css';
 
 function TaskItem({ task, onDelete, onEdit, onMoveUp, onMoveDown }) {
     const [isHovered, setIsHovered] = useState(false);
     const [isCompleted, setIsCompleted] = useState(false);
+
+    const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: task.id });
+    
+    const style = {
+        transition,
+        transform: CSS.Transform.toString(transform),
+    }
 
     const toggleComplete = () => {
         setIsCompleted(!isCompleted);
@@ -11,6 +20,10 @@ function TaskItem({ task, onDelete, onEdit, onMoveUp, onMoveDown }) {
 
     return (
         <div
+            ref={setNodeRef}
+            {... attributes}
+            {... listeners}
+            style={style}
             className={styles.task_item}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
