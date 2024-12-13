@@ -80,7 +80,7 @@ Click the ✏️ edit button to modify an existing task.
 
 ### **5. Marking a Task as Completed**
 Click the checkbox to mark tasks as completed. Completed tasks are styled with a strikethrough.
-- **[Insert photo of marking a task as completed]**
+
 ![buy_gift_2](https://github.com/user-attachments/assets/d30c0fc2-41a9-489b-bf8a-1ab1a9ca51d5)
 
 ![buy_gift_1](https://github.com/user-attachments/assets/2996e5a2-bb17-41d9-b63d-dd6ac2b34693)
