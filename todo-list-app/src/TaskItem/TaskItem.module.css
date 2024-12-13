@@ -5,10 +5,10 @@
     border-radius: 0.5rem;
     border: 0.15rem solid #d3d3d3;
     padding: 0.5rem;
-
     display: flex;
     justify-content: center;
     font-weight: bold;
+    position: relative;
 }
 
 .task_text {
@@ -18,9 +18,29 @@
     font-size: 1.2rem;
 }
 
+.task_text.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.checkbox {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translate(40%, -67%);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.task_item:hover .checkbox {
+    display: block;
+}
+
 .delete_button {
     background-color: #ff4c4c;
-    margin-left: 30rem;
+    border-radius: 0.5rem;
     border: none;
     width: 2.5em;
     height: 2.5em;
@@ -31,8 +51,22 @@
     background-color: #fa0909;
 }
 
+.edit_button {
+    background-color: rgb(254, 250, 39);
+    border-radius: 0.5rem;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.edit_button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 221, 0);
+}
+
 .up_button {
     background-color: #00a6ff;
+    border-radius: 0.5rem;
     border: none;
     width: 2.5em;
     height: 2.5em;
@@ -45,6 +79,7 @@
 
 .down_button {
     background-color: #20acf8;
+    border-radius: 0.5rem;
     border: none;
     width: 2.5em;
     height: 2.5em;

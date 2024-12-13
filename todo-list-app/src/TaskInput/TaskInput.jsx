@@ -10,6 +10,10 @@ function TaskInput({ onAddTask }) {
             setInputValue("");
         }
     }
+    
+    const handleKeyDown = (e) => {
+        return e.key === "Enter" ? handleAdd() : null;
+    }
 
     return(
         <>
@@ -19,7 +23,7 @@ function TaskInput({ onAddTask }) {
                     placeholder="Enter a task..."
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-
+                    onKeyDown={handleKeyDown}
                 />
                 <button className={styles.button_add} onClick={handleAdd}>Add</button>
             </div>
